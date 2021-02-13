@@ -1,13 +1,13 @@
 from twilio.rest import Client 
  
-account_sid = 'AC842cdb38711123bf6bf6e62a57af059c' 
-auth_token = 'f9f8ab555aca66793581a0d33f2f616d' 
+account_sid = ''
+auth_token = ''
 client = Client(account_sid, auth_token) 
 def send():
 	message = client.messages.create( 
 	                              from_='whatsapp:+14155238886',  
 	                              body='I think you have forgotten me🥺! ',      
-	                              to='whatsapp:+919021393816' 
+	                              to='whatsapp:+91 mobile number' 
 	                        ) 
 	 
 	print(message.sid)
